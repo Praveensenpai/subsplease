@@ -92,33 +92,12 @@ wheels = [
 ]
 
 [[package]]
-name = "nyaasi-rss"
-version = "0.1.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "httpx" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/50/bd/3d91cd900d53031ebd3d5db0844ea515421d042ed1c2e639e6ea2a8f7b77/nyaasi_rss-0.1.0.tar.gz", hash = "sha256:87f241c2e9b666c8e2167d5150db4cf01c8080e41911067b063b9a5c2a36541f", size = 3214 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/4f/d9/57937fe82ae026b0776b75c7920cc0c65b73fd8d24622fed186277e44e87/nyaasi_rss-0.1.0-py3-none-any.whl", hash = "sha256:3095a3e7ebdcb06cd625b6fbbb62269c3d0bed8255c452c5e9ae8df6bde25c20", size = 3763 },
-]
-
-[[package]]
 name = "pygments"
 version = "2.18.0"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/8e/62/8336eff65bcbc8e4cb5d05b55faf041285951b6e80f33e2bff2024788f31/pygments-2.18.0.tar.gz", hash = "sha256:786ff802f32e91311bff3889f6e9a86e81505fe99f2735bb6d60ae0c5004f199", size = 4891905 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f7/3f/01c8b82017c199075f8f788d0d906b9ffbbc5a47dc9918a945e13d5a2bda/pygments-2.18.0-py3-none-any.whl", hash = "sha256:b8e6aca0523f3ab76fee51799c488e38782ac06eafcf95e7ba832985c8e7b13a", size = 1205513 },
-]
-
-[[package]]
-name = "pytz"
-version = "2024.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/3a/31/3c70bf7603cc2dca0f19bdc53b4537a797747a58875b552c8c413d963a3f/pytz-2024.2.tar.gz", hash = "sha256:2aa355083c50a0f93fa581709deac0c9ad65cca8a9e9beac660adcbd493c798a", size = 319692 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/11/c3/005fcca25ce078d2cc29fd559379817424e94885510568bc1bc53d7d5846/pytz-2024.2-py2.py3-none-any.whl", hash = "sha256:31c7c1817eb7fae7ca4b8c7ee50c72f93aa2dd863de768e1ef4245d426aa0725", size = 508002 },
 ]
 
 [[package]]
@@ -144,29 +123,16 @@ wheels = [
 ]
 
 [[package]]
-name = "test"
-version = "0.1.0"
+name = "subsplease"
+version = "1.0.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "nyaasi-rss" },
-    { name = "pytz" },
+    { name = "httpx" },
     { name = "rich" },
-    { name = "tzdata" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "nyaasi-rss", specifier = ">=0.1.0" },
-    { name = "pytz", specifier = ">=2024.2" },
+    { name = "httpx", specifier = ">=0.27.2" },
     { name = "rich", specifier = ">=13.9.2" },
-    { name = "tzdata", specifier = ">=2024.2" },
-]
-
-[[package]]
-name = "tzdata"
-version = "2024.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/e1/34/943888654477a574a86a98e9896bae89c7aa15078ec29f490fef2f1e5384/tzdata-2024.2.tar.gz", hash = "sha256:7d85cc416e9382e69095b7bdf4afd9e3880418a2413feec7069d533d6b4e31cc", size = 193282 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/a6/ab/7e5f53c3b9d14972843a647d8d7a853969a58aecc7559cb3267302c94774/tzdata-2024.2-py2.py3-none-any.whl", hash = "sha256:a48093786cdcde33cad18c2555e8532f34422074448fbc874186f0abd79565cd", size = 346586 },
 ]
