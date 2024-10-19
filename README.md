@@ -1,4 +1,4 @@
-## SubsPlease API Client This package provides a simple interface to fetch and parse episodes from the [SubsPlease API](https://subsplease.org/).
+## SubsPlease API Client This package provides a simple interface to fetch and parse episodes from the [SubsPlease](https://subsplease.org/).
 
 ### Installation You can install the package using pip:
 
