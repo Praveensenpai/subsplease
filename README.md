@@ -16,7 +16,7 @@ search_query = "kami"
 subs_please = SubsPlease()
 episodes = subs_please.search(search_query)
 for episode in episodes:
-	print(episode)
+    print(episode)
 ```
 
 ## Features
