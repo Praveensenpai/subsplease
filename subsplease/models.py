@@ -34,7 +34,6 @@ class Download:
 class Episode:
     show: str
     episode: int
-    time: datetime
     release_date: datetime
     downloads: list[Download]
     xdcc: str
@@ -47,7 +46,6 @@ class Episode:
         return Episode(
             show=raw_data["show"],
             episode=raw_data["episode"],
-            time=datetime.strptime(raw_data["time"], "%m/%d/%y"),
             release_date=datetime.strptime(
                 raw_data["release_date"], "%a, %d %b %Y %H:%M:%S %z"
             ),
