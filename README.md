@@ -10,7 +10,7 @@ pip install subsplease
 
 Here’s how you can use the package:
 
-```
+```py
 from subsplease import SubsPlease
 search_query = "kami"
 subs_please = SubsPlease()
